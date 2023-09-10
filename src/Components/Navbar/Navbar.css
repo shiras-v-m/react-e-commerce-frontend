@@ -1,0 +1,131 @@
+
+/* top container begins */
+.topLinksContainer{
+    padding: 10px 4rem;
+    background:linear-gradient(to right,rgb(84, 84, 255),rgb(0, 0, 200));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topLinksContainer span{
+    color: white;
+    font-size: 14px;
+}
+.customerServiceNumber{
+    font-weight: 500;
+}
+.topLinksRight a{
+    text-decoration: none;
+    color: white;
+    padding-left:3.5rem ;
+    font-size: 13px;
+}
+/* top container ends */
+/* middle container begins */
+.logoContainer{
+    padding: 10px 4rem;
+    background:linear-gradient(to right,rgb(108, 108, 255),rgb(35, 35, 230));
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    cursor: pointer;
+}
+.searchContainer{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 320px;
+
+}
+.searchInput{
+    padding:0px 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.searchBtn{
+    cursor: pointer;
+    margin-left: 10px;
+    width: 90px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(46, 46, 46);
+}
+.searchBtn:hover{
+    background-color: rgb(56, 56, 56);
+
+}
+.searchIcon{
+    color: white;
+    font-size: 20px;
+    transform:scaleX(-1);;
+}
+
+.hideonMobile{
+    display: none;
+}
+/* middle container ends */
+
+/* bottom links begins */
+.bottomLinks{
+    border-top: 0.3px solid rgba(98, 98, 98, 0.62);
+    padding: 10px 4rem;
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(to right,rgb(108, 108, 255),rgb(35, 35, 230));
+
+}
+.bottomLink{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* cart container begins  */
+.cartContainer{
+    display: flex;
+    cursor: pointer;
+}
+.cartIcon{
+    color: white;
+}
+.cartCount{
+    border-radius: 50%;
+    background:white;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.countTxt{
+color: black;
+font-size: 10px;
+}
+/* cart container ends */
+/* bottom links ends */
+
+
+/* Responsive design */
+@media(max-width:887px){
+    .topLinksContainer{
+        display: none;
+    }
+    .bottomLinks{
+        display: none;
+    }
+    .searchContainer{
+        display: none;
+    }
+    .hideonMobile{
+        display: flex;
+    }
+    
+}

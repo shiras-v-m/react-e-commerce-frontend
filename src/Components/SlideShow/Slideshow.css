@@ -1,0 +1,22 @@
+.carousel .thumb img {
+    width: 100% !important;
+    height: 100% !important;
+}
+.carousel {
+    display: flex !important;
+    justify-content: center !important;
+}
+.carousel .slide img {
+    max-height: 450px;  /* change this to whatever you want */
+    width: auto;
+}
+.carousel .slide .legend:hover{
+    background-color: rgba(251, 226, 226, 0.452);
+}
+.carousel .slide .legend{
+    cursor: pointer;
+    margin-left: -50px   !important;
+    background-color: rgb(49, 49, 236) !important;
+    width: 100px  !important;
+   
+}

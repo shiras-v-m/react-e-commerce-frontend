@@ -1,0 +1,3 @@
+google fonts
+google icons
+react router dom library
