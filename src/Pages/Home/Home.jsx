@@ -2,13 +2,14 @@ import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import Slideshow from '../../Components/SlideShow/Slideshow'
 import './Home.css'
+import Products from '../../Components/Products/Products'
 function Home() {
   return (
     <>
    <header>
     <Navbar/>
    </header>
-
+    
    <Slideshow className="slideShow"/>
    <div className="services">
     
@@ -41,6 +42,7 @@ function Home() {
       </div>
     </div>
    </div>
+   <Products />
 
    </>
   )

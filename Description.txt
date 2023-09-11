@@ -1,3 +1,7 @@
 google fonts
 google icons
 react router dom library
+react-responsive-carousel library
+react-bootstrap 
+react-simple-star-rating library
+Overlay tooltip from react-bootstrap to show hint to add to cart
