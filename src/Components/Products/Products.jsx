@@ -10,156 +10,156 @@ function Products() {
 
     const renderTooltip = (props) => (
         <Tooltip id="button-tooltip" {...props}>
-          Add to cart
+            Add to cart
         </Tooltip>
-      );
+    );
 
-  return (
-    
-    <div className="productsContainer">
-     
+    return (
 
-        {/* <h3 className='heading'>Today's best deal</h3> */}
-        <div className="product">
-            <div className="imageContainer">
-            <img className='productImage' src={trimmer} alt="product" />
-            <OverlayTrigger
-      placement="left"
-      delay={{ show: 100, hide: 90 }}
-      overlay={renderTooltip}
-    >       
-<span class="material-symbols-outlined productCartIcon">garden_cart</span>
-    </OverlayTrigger>
-            
+        <div className="productsContainer">
+
+
+            {/* <h3 className='heading'>Today's best deal</h3> */}
+            <div className="product">
+                <div className="imageContainer">
+                    <img className='productImage' src={trimmer} alt="product" />
+                    <OverlayTrigger
+                        placement="left"
+                        delay={{ show: 100, hide: 90 }}
+                        overlay={renderTooltip}
+                    >
+                        <span className="material-symbols-outlined productCartIcon">garden_cart</span>
+                    </OverlayTrigger>
+
+                </div>
+                <div className='productDetails'>
+                    <StarRating />
+                    <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
+                    <span>$49.00</span>
+                </div>
+
+
             </div>
-            <div className='productDetails'>
-                  <StarRating />
-                <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
-                <span>$49.00</span>
+            <div className="product">
+                <div className="imageContainer">
+                    <img className='productImage' src={speaker} alt="product" />
+                    <OverlayTrigger
+                        placement="left"
+                        delay={{ show: 100, hide: 90 }}
+                        overlay={renderTooltip}
+                    >
+                        <span className="material-symbols-outlined productCartIcon">garden_cart</span>
+                    </OverlayTrigger>            </div>
+                <div className='productDetails'>
+                    <StarRating />
+                    <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
+                    <span>$49.00</span>
+                </div>
+
+
             </div>
+            <div className="product">
+                <div className="imageContainer">
+                    <img className='productImage' src={trimmer} alt="" />
+                    <OverlayTrigger
+                        placement="left"
+                        delay={{ show: 100, hide: 90 }}
+                        overlay={renderTooltip}
+                    >
+                        <span className="material-symbols-outlined productCartIcon">garden_cart</span>
+                    </OverlayTrigger>            </div>
+                <div className='productDetails'>
+                    <StarRating />
+                    <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
+                    <span>$49.00</span>
+                </div>
 
 
+            </div>
+            <div className="product">
+                <div className="imageContainer">
+                    <img className='productImage' src={trimmer} alt="" />
+                    <OverlayTrigger
+                        placement="left"
+                        delay={{ show: 100, hide: 90 }}
+                        overlay={renderTooltip}
+                    >
+                        <span className="material-symbols-outlined productCartIcon">garden_cart</span>
+                    </OverlayTrigger>            </div>
+                <div className='productDetails'>
+                    <StarRating />
+                    <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
+                    <span>$49.00</span>
+                </div>
+
+
+            </div>
+            <div className="product">
+                <div className="imageContainer">
+                    <img className='productImage' src={trimmer} alt="product image" />
+                    <OverlayTrigger
+                        placement="left"
+                        delay={{ show: 100, hide: 90 }}
+                        overlay={renderTooltip}
+                    >
+                        <span className="material-symbols-outlined productCartIcon">garden_cart</span>
+                    </OverlayTrigger>            </div>
+                <div className='productDetails'>
+                    <StarRating />
+                    <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
+                    <span>$49.00</span>
+                </div>
+            </div>
+            <div className="product">
+                <div className="imageContainer">
+                    <img className='productImage' src={trimmer} alt="product image" />
+                    <OverlayTrigger
+                        placement="left"
+                        delay={{ show: 100, hide: 90 }}
+                        overlay={renderTooltip}
+                    >
+                        <span className="material-symbols-outlined productCartIcon">garden_cart</span>
+                    </OverlayTrigger>            </div>
+                <div className='productDetails'>
+                    <StarRating />
+                    <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
+                    <span>$49.00</span>
+                </div>
+            </div>
+            <div className="product">
+                <div className="imageContainer">
+                    <img className='productImage' src={trimmer} alt="product image" />
+                    <OverlayTrigger
+                        placement="left"
+                        delay={{ show: 100, hide: 90 }}
+                        overlay={renderTooltip}
+                    >
+                        <span className="material-symbols-outlined productCartIcon">garden_cart</span>
+                    </OverlayTrigger>            </div>
+                <div className='productDetails'>
+                    <StarRating />
+                    <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
+                    <span>$49.00</span>
+                </div>
+            </div>
+            <div className="product">
+                <div className="imageContainer">
+                    <img className='productImage' src={trimmer} alt="product image" />
+                    <OverlayTrigger
+                        placement="left"
+                        delay={{ show: 100, hide: 90 }}
+                        overlay={renderTooltip}
+                    >
+                        <span className="material-symbols-outlined productCartIcon">garden_cart</span>
+                    </OverlayTrigger>            </div>
+                <div className='productDetails'>
+                    <StarRating />
+                    <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
+                    <span>$49.00</span>
+                </div>
+            </div>
         </div>
-        <div className="product">
-            <div className="imageContainer">
-            <img className='productImage' src={speaker} alt="product" />
-            <OverlayTrigger
-      placement="left"
-      delay={{ show: 100, hide: 90 }}
-      overlay={renderTooltip}
-    >       
-<span class="material-symbols-outlined productCartIcon">garden_cart</span>
-    </OverlayTrigger>            </div>
-            <div className='productDetails'>
-                <StarRating />
-                <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
-                <span>$49.00</span>
-            </div>
-
-
-        </div>
-        <div className="product">
-            <div className="imageContainer">
-            <img className='productImage' src={trimmer} alt="" />
-            <OverlayTrigger
-      placement="left"
-      delay={{ show: 100, hide: 90 }}
-      overlay={renderTooltip}
-    >       
-<span class="material-symbols-outlined productCartIcon">garden_cart</span>
-    </OverlayTrigger>            </div>
-            <div className='productDetails'>
-                <StarRating />
-                <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
-                <span>$49.00</span>
-            </div>
-
-
-        </div>
-         <div className="product">
-            <div className="imageContainer">
-            <img className='productImage' src={trimmer} alt="" />
-            <OverlayTrigger
-      placement="left"
-      delay={{ show: 100, hide: 90 }}
-      overlay={renderTooltip}
-    >       
-<span class="material-symbols-outlined productCartIcon">garden_cart</span>
-    </OverlayTrigger>            </div>
-            <div className='productDetails'>
-                <StarRating />
-                <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
-                <span>$49.00</span>
-            </div>
-
-
-        </div>
-        <div className="product">
-            <div className="imageContainer">
-            <img className='productImage' src={trimmer} alt="product image" />
-            <OverlayTrigger
-      placement="left"
-      delay={{ show: 100, hide: 90 }}
-      overlay={renderTooltip}
-    >       
-<span class="material-symbols-outlined productCartIcon">garden_cart</span>
-    </OverlayTrigger>            </div>
-            <div className='productDetails'>
-                   <StarRating />
-                <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
-                <span>$49.00</span>
-            </div>
-        </div>
-        <div className="product">
-            <div className="imageContainer">
-            <img className='productImage' src={trimmer} alt="product image" />
-            <OverlayTrigger
-      placement="left"
-      delay={{ show: 100, hide: 90 }}
-      overlay={renderTooltip}
-    >       
-<span class="material-symbols-outlined productCartIcon">garden_cart</span>
-    </OverlayTrigger>            </div>
-            <div className='productDetails'>
-                 <StarRating />
-                <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
-                <span>$49.00</span>
-            </div>
-        </div>
-        <div className="product">
-            <div className="imageContainer">
-            <img className='productImage' src={trimmer} alt="product image" />
-            <OverlayTrigger
-      placement="left"
-      delay={{ show: 100, hide: 90 }}
-      overlay={renderTooltip}
-    >       
-<span class="material-symbols-outlined productCartIcon">garden_cart</span>
-    </OverlayTrigger>            </div>
-            <div className='productDetails'>
-               <StarRating />
-                <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
-                <span>$49.00</span>
-            </div>
-        </div>
-        <div className="product">
-            <div className="imageContainer">
-            <img className='productImage' src={trimmer} alt="product image" />
-            <OverlayTrigger
-      placement="left"
-      delay={{ show: 100, hide: 90 }}
-      overlay={renderTooltip}
-    >       
-<span class="material-symbols-outlined productCartIcon">garden_cart</span>
-    </OverlayTrigger>            </div>
-            <div className='productDetails'>
-                  <StarRating />
-                <h4 className='productTitle'>Multigroomer All-in-One Trimmer</h4>
-                <span>$49.00</span>
-            </div>
-        </div>
-    </div>
-  )
+    )
 }
 
 export default Products

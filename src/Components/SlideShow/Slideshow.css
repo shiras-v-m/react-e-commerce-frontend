@@ -20,3 +20,6 @@
     width: 100px  !important;
    
 }
+.slideContainer{
+    cursor: pointer;
+}

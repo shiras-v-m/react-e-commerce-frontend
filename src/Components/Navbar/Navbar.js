@@ -1,15 +1,20 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Navbar.css'
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from '../../assets/logo.svg'
+
 function Navbar() {
+  const navigate=useNavigate()
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
   
+    const handleContinueShoping = ()=>{
+      navigate('/login')
+    }
 
   return (
     <div className='navbar'>
@@ -24,28 +29,28 @@ function Navbar() {
             <img className='logo' src={logo} alt="logo" />
             <div className='searchContainer'>
                 <input className='searchInput' type="text" placeholder='Search products...'/>
-                <button className='searchBtn'><span class="material-symbols-outlined searchIcon">search</span></button>
+                <button className='searchBtn'><span className="material-symbols-outlined searchIcon">search</span></button>
             </div>
             <div className="cartContainer hideonMobile" onClick={handleShow}>
-            <span class="material-symbols-outlined cartIcon">garden_cart</span>
+            <span className="material-symbols-outlined cartIcon">garden_cart</span>
                 <div className="cartCount">
                     <span className='countTxt'>1</span>
                 </div>
             </div>
         </div>
         <div className="bottomLinks">
-            <Link className='bottomLink' to="/login">All products</Link>
+            <Link className='bottomLink' to="">All products</Link>
             <Link  className='bottomLink' to="">Home appliances</Link>
             <Link  className='bottomLink' to="">Audio & Video</Link>
             <Link  className='bottomLink' to="">Refrigerator</Link>
             <Link  className='bottomLink' to="">Today's deal</Link>
             <div className="cartContainer" onClick={handleShow}>
-            <span class="material-symbols-outlined cartIcon">garden_cart</span>
+            <span className="material-symbols-outlined cartIcon">garden_cart</span>
                 <div className="cartCount">
                     <span className='countTxt'>1</span>
                 </div>
             </div>
-            <Link className='bottomLink' to=''>Log In</Link>
+            <Link className='bottomLink' to='/login'>Log In</Link>
         </div>
 
 
@@ -58,7 +63,7 @@ function Navbar() {
         <Offcanvas.Body className='offcanvasBody'>
           Some text as placeholder. In real life you can have the elements you
           have chosen. Like, text, images, lists, etc.
-            <button className='continueShoppingBtn'>Continue Shopping</button>
+            <button className='continueShoppingBtn' onClick={handleContinueShoping}>Continue Shopping</button>
         </Offcanvas.Body>
       </Offcanvas>
 

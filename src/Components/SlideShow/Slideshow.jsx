@@ -1,23 +1,25 @@
-import React from 'react'
-import './Slideshow.css'
+import React from 'react';
+import './Slideshow.css';
+import bannerImaage1 from '../../assets/bannerImage1.png';
+import bannerImage2 from '../../assets/bannerImage2.webp'
+import bannerImage3 from '../../assets/bannerImage3.webp'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import amazonBanner from '../../assets/amazon-ads-banner.png'
 function Slideshow() {
     return(
        <div className='slideshow'>
             <Carousel swipeable={true} showArrows={false} infiniteLoop showStatus={false} autoPlay renderThumbs={()=>{}}>
-            <div>
-                <img alt="Banner" src={amazonBanner} />
-                <p className="legend">Legend 1</p>
+            <div className='slideContainer'>
+                <img alt="Banner" src={bannerImaage1} />
+                {/* <p className="legend">Shop Now</p> */}
             </div>
-            <div>
-                <img alt="Banner" src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_640.png" />
-                <p className="legend">Legend 13</p>
+            <div className='slideContainer'>
+                <img alt="Banner" src={bannerImage2} />
+                {/* <p className="legend">Shop Now</p> */}
             </div>
-            <div>
-                <img alt="Banner" src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_640.png" />
-                <p className="legend">Legend 14</p>
+            <div className='slideContainer'>
+                <img alt="Banner" src={bannerImage3 } />
+                {/* <p className="legend">Shop Now</p> */}
             </div>
         </Carousel>
        </div>

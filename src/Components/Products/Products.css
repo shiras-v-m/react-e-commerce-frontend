@@ -2,7 +2,7 @@
     padding-left: 10px;
 }
 .productsContainer{
-
+    margin: 20px 4rem;
     padding: 10px 4rem;
     display: flex;
     flex-wrap: wrap;
@@ -20,9 +20,13 @@
 }
 .productImage{
    width: 100%;
+   transition: 0.8s ;
 }
 .imageContainer{
     position: relative;
+}
+.imageContainer:hover > .productImage   {
+    scale: 1.1;
 }
 .imageContainer:hover > .productCartIcon{
     display: block;
@@ -48,4 +52,11 @@
 }
 .productTitle{
     font-size: 15px;
+}
+
+/* Responsive design */
+@media(max-width:887px){
+    .productsContainer{
+        margin: 20px 5px;
+    }
 }

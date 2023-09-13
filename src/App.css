@@ -1,0 +1,20 @@
+.scrollToTopContainer{
+    z-index: 1;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.scrollBtn{
+    border: none;
+    outline: none;
+    color: white;
+    background: rgb(61, 61, 241);
+
+}
+.scrollTopIcon{
+    transform: rotate(180deg);
+    font-size: 25px;
+}

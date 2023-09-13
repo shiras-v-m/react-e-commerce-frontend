@@ -1,0 +1,61 @@
+.shippingContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-right: 1px solid rgb(159, 159, 159);
+    padding: 6px;
+    flex: calc( 100% / 4);
+}
+
+.services{
+   
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    display: flex;
+    margin: 10px 4rem;
+    padding: 10px;
+    gap: 5px;
+    background-color: white;
+
+}
+.shippingIcon,.replyIcon,.chatIcon,.creditCardIcon{
+color: blue;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.heading{
+    font-size: 15px;
+    padding-left: 0;
+}
+.description{
+    font-size: 13px;
+    color: gray;
+}
+/* Responsive design */
+@media(max-width:747px){
+    .shippingContainer{
+        flex: calc(100% / 4)
+    }
+    .services{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:522px){
+    .services{
+    
+    margin: 10px 1.8rem;
+    }
+    .shippingContainer{
+        
+        flex: calc(100% / 2);
+        border-right: none;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.397);
+        padding: 10px;
+    }
+    .services{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
